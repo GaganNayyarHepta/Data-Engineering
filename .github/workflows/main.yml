@@ -1,0 +1,10 @@
+name: Workflow Action
+run-name: ${{ github.actor }} is still testing
+on: [push]
+jobs:
+  Explore-github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The jobs was tiggered by ${{ github.event_name }} event"
+      - run: echo "The jon is running on server ${{ runner.os }}" 
+      - run: echo "Job status ${{ job.status }}"
