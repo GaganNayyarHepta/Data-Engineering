@@ -1,5 +1,5 @@
 name: Workflow Action
-run-name: ${{ githubactor }} is still testing
+run-name: ${{ github.actor }} is still testing
 on: [push]
 jobs:
   Explore-github-action:
